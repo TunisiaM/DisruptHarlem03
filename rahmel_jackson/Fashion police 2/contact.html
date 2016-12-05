@@ -2,16 +2,7 @@
 <html lang="en">
 
 <head>
-<style type="text/css">
- body {
-    background-image: url("img/bg1.jpg") !important;
-    background-color: #cccccc;
-}
-p,h1 {
-    color: #ffffff  ;
-}
 
-</style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +23,23 @@ p,h1 {
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
+.container1 {
+    text-align: left;
+    width: 50%;
+}
 
+.container2 {
+    text-align: right;
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 225px;
+    right:40px
+}
+    
+
+</style>
 </head>
 
 <body>
@@ -68,15 +75,38 @@ p,h1 {
         </div>
         <!-- /.container -->
     </nav>
-<center>  
-<font size="15"><p> Rahmel Jackson</p></font>
-<img src="img/Rahmel.jpg" alt="banner">
-<br>
-<font size="5"><p>
-Rahmel Jackson is a writer, aspiring junior software developer, and entrepreneur with a strong interest in cybersecurity, data analysis, and digital marketing. Rahmel's accomplishments include working with Mozilla to teach data/metadata collection, social media, and encryption, and winning Harlem Hackathon 2016. Rahmel hopes to create a future were technology and social organization can better work together to more fully improve the human condition for all people. 
-</font></p>   
- </center>
+<div class="container1">
+<h1>Rahmel Jackson<h1>    
+<center><small><font size="5">Founder, Writer,</small></center></font>
+<img src="img/Rahmel.jpg" alt="banner" width="600px">
+</div>
 
+<div class="container2">  
+<font size="6"><p>Rahmel Jackson is a writer, junior software developer, with a strong interest in cybersecurity, data analysis, and digital marketing.<br><br>Rahmel's accomplishments include working with Mozilla to teach data/metadata collection,social media,encryption, and winning Harlem Hackathon 2016. Rahmel hopes to create a future were technology and social organization can better work together to more fully improve the human condition for all people.</p>
+</div>
+<br>    
+<center>
+<h3>Contact Me Here</h3>
+
+<!--contact form script-->
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <label for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    </div>
+    <input id="submit_button" type="submit" value="Send email" />
+</form> 
+
+</center>   
+<!--form script ending-->
 
 
 
